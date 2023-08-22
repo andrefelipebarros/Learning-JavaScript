@@ -1,5 +1,5 @@
-nomeHeroi = "Fernando"
-xpHeroi = 7933
+let nomeHeroi = "Fernando"
+let xpHeroi = 7933
 
 
 let mensagem;
