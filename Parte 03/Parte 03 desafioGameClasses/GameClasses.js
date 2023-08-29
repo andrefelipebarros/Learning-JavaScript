@@ -36,4 +36,34 @@ Ao final deve se exibir uma mensagem:
   ex: mago atacou usando magia
   guerreiro atacou usando espada*/
 
-  
+  class guildaDB{
+    //gerar function 
+    constructor(name,idade,tipo,ataque){
+      //nome e idade é algo extra.
+      this.name = name
+      this.idade = idade
+      ////////////////////////
+      this.tipo = tipo
+      this.ataque = ataque
+    }
+
+    atacar(){
+      console.log(`o ${this.tipo} atacou usando ${this.ataque}`)
+    }
+  }
+
+  let magoAtaque = new guildaDB("Henrique","17", "mago", "magia")
+  let guerreiroAtaque = new guildaDB("Matheus", "26", "guerreiro", "espada")
+  let mongeAtaque = new guildaDB("Aguiar", "15", "monge", "artes marciais")
+  let ninjaAtaque = new guildaDB("André", "19", "ninja", "shuriken")
+
+  //poderia fazer um swith case para ver futuramente uma lista de cada classe
+  //para poder utilizar nome e idade com algum valor.
+
+  magoAtaque.atacar()
+  guerreiroAtaque.atacar()
+  mongeAtaque.atacar()
+  ninjaAtaque.atacar()
+
+
+
